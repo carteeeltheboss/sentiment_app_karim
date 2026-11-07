@@ -44,3 +44,5 @@ sentiment-app/
 | --- | --- | --- | --- |
 | Membre A | [Nom 1] | [@login] | |
 | Membre B | [Nom 2] | [@login] | |
+
+- Membre B : KAFIF Imane (commit simulé avec l'accord de l'enseignant)
