@@ -1,0 +1,21 @@
+text,attendu,difficulte,erreur_connue
+"Commande reçue en deux jours, emballage soigné",POSITIVE,,
+"Très bon rapport qualité prix, je recommande",POSITIVE,,
+"Produit conforme à la description, rien à redire",POSITIVE,,
+Service client réactif et aimable,POSITIVE,,"mot positif ou négatif dominant, le sac de mots ne voit pas le contexte"
+"Qualité au rendez-vous, livraison rapide",POSITIVE,,
+Article défectueux dès le déballage,NEGATIVE,,
+"Remboursement jamais reçu, service injoignable",NEGATIVE,,
+"Très déçu, la qualité est médiocre",NEGATIVE,,"mot positif ou négatif dominant, le sac de mots ne voit pas le contexte"
+Colis perdu et aucune réponse du vendeur,NEGATIVE,,
+"Matériau fragile, cassé après deux jours",NEGATIVE,,
+"Pas déçu du tout, je recommande",POSITIVE,négation,
+Rien à reprocher à ce produit,POSITIVE,négation,
+Ce n'est vraiment pas mauvais pour le prix,POSITIVE,négation,
+"Arrivé cassé, bravo le transporteur",NEGATIVE,ironie,
+"Super, encore un colis en retard, merci beaucoup",NEGATIVE,ironie,"mot positif ou négatif dominant, le sac de mots ne voit pas le contexte"
+Livraison rapide mais produit cassé à l'arrivée,NEGATIVE,mitigé,
+"Un peu cher au début, mais finalement je l'adore",POSITIVE,mitigé,
+Le film est long mais les acteurs sont formidables,POSITIVE,autre domaine,
+Scénario creux et mise en scène ennuyeuse,NEGATIVE,autre domaine,"mot positif ou négatif dominant, le sac de mots ne voit pas le contexte"
+Un restaurant où l'on mange très bien et le service est parfait,POSITIVE,autre domaine,
