@@ -37,9 +37,9 @@ def test_refus_de_demarrer_sans_modele(monkeypatch, tmp_path, predict_mod):
         pass
 
 
-def test_503_quand_le_modele_est_retire():
+def test_503_quand_le_modele_est_retire(monkeypatch):
     with TestClient(app) as c:
-        app.state.classifier = None
+        monkeypatch.setattr(app.state, "classifier", None)
         assert c.post("/predict", json=AVIS).status_code == 503
         assert c.get("/health").status_code == 503
 
