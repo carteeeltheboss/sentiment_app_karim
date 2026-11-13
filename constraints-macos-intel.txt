@@ -1,0 +1,8 @@
+# Prebuilt wheels for the Intel macOS / Python 3.11 development environment.
+# SHAP's newer Numba/LLVM dependencies otherwise require a local LLVM build.
+numba==0.60.0
+llvmlite==0.43.0
+# Avoid a Rust source build on Intel macOS.
+cryptography==44.0.3
+# Compatible with DVC's platformdirs and MLflow's packaging requirements.
+virtualenv==20.26.6

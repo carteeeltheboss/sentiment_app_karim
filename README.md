@@ -45,4 +45,33 @@ sentiment-app/
 | Membre A | [Nom 1] | [@login] | |
 | Membre B | [Nom 2] | [@login] | |
 
-- Membre B : KAFIF Imane (commit simul� avec l'accord de l'enseignant)
+- Membre B : KAFIF Imane (commit simulé avec l'accord de l'enseignant)
+
+## Paquet installable (TP6)
+
+Python 3.11 ou plus récent. Depuis la racine du dépôt :
+
+```bash
+python -m pip install -e '.[ui]'
+python src/make_demo.py
+python src/train.py
+sentiment --version
+sentiment predict "Livraison rapide, produit conforme, très satisfait"
+sentiment serve
+# Dans un autre terminal :
+sentiment ui
+```
+
+Pour construire une roue et l'installer sur une autre machine :
+
+```bash
+python -m pip install -r requirements-dev.txt
+python -m build --wheel
+python -m pip install 'dist/sentiment_app-0.6.0-py3-none-any.whl'
+SENTIMENT_MODELE=/chemin/absolu/sentiment.joblib sentiment predict "Très satisfait"
+```
+
+La roue contient le code (`sentiment_app`, `api`, `ui`), sans modèle, données ni
+ tests. Pour l'interface, installer `sentiment-app[ui]`. Le modèle doit être entraîné
+avec scikit-learn 1.5, comme les dépendances du paquet. Voir
+[le compte rendu TP6](docs/semaine6.md) et [l'installation macOS](docs/setup-macos.md).
